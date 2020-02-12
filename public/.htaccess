@@ -19,3 +19,18 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+
+<IfModule mod_headers.c>
+    Header set Content-Security-Policy "script-src 'self' https://www.google.com"
+</IfModule>
+
+<IfModule mod_headers.c>
+    # only for Apache > 2.2.4:
+    Header edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure
+    # lower versions:
+    Header set Set-Cookie HttpOnly;Secure
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header always set X-FRAME-OPTIONS "DENY"
+</IfModule>
