@@ -5,7 +5,7 @@ A boilerplate of [Laravel](https://laravel.com/) project using [Adminator](https
 dashboard 
 
 ### Technologies 
-- [Laravel 5.*](https://laravel.com/docs/6.x)
+- [Laravel 6.*](https://laravel.com/docs/6.x)
 - [Bootstrap 4.3](https://getbootstrap.com/docs/4.3)
 
 ### Installation
