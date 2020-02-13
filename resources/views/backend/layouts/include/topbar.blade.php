@@ -104,31 +104,41 @@
                              src="{{auth()->user()->photo ?? asset('/images/dummy/users/profile.png')}}"
                              alt="">
                     </div>
-                    <div class="peer">
-                        @auth
+                    @auth
+                        <div class="peer">
                             <span class="fsz-sm c-grey-900">{{ auth()->user()->name }}</span>
-                        @endauth
-                    </div>
+                        </div>
+                    @endauth
                 </a>
                 <ul class="dropdown-menu fsz-sm">
-                    <li>
-                        <a href="#" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
-                            <i class="ti-user mR-10"></i>
-                            <span>Profile</span>
-                        </a>
-                    </li>
-                    <li role="separator" class="divider"></li>
-                    <li>
-                        <a href="#"
-                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
-                           class="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
-                            <i class="ti-power-off mR-10"></i>
-                            <span>Logout</span>
-                        </a>
-                        <form id="logout-form" action="#" method="POST" style="display: none;">
-                            @csrf()
-                        </form>
-                    </li>
+                    @auth
+                        <li>
+                            <a href="#" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
+                                <i class="ti-user mR-10"></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="#"
+                               onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                               class="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
+                                <i class="ti-power-off mR-10"></i>
+                                <span>Logout</span>
+                            </a>
+                            <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: none;">
+                                @csrf()
+                            </form>
+                        </li>
+                    @endauth
+                    @guest
+                        <li>
+                            <a href="{{route('login')}}" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
+                                <i class="ti-user mR-10"></i>
+                                <span>Login</span>
+                            </a>
+                        </li>
+                    @endguest
                 </ul>
             </li>
         </ul>

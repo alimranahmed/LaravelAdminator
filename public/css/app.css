@@ -10884,3 +10884,7 @@ a.text-dark:focus {
   }
 }
 
+.content-container {
+  min-height: 80vh;
+}
+

@@ -32,7 +32,8 @@
         <!-- ### $Sidebar Menu ### -->
         <ul class="sidebar-menu scrollable pos-r">
             <li class="nav-item mT-30 active">
-                <a class="sidebar-link {{ request()->is('/') ? 'highlight' : '' }}" href="#">
+                <a class="sidebar-link {{ request()->is('/') ? 'highlight' : '' }}"
+                   href="{{route('backend.dashboard')}}">
                     <span class="icon-holder">
                         <i class="c-blue-500 ti-home"></i>
                     </span>
