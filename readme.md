@@ -1,4 +1,7 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center">
+    <img height="150" width="150" 
+        src="https://user-images.githubusercontent.com/7629427/74469384-bf685b80-4ec6-11ea-916a-66a7d060d897.png">
+</p>
 
 # Laravel-Adminator
 A boilerplate of [Laravel](https://laravel.com/) project using [Adminator](https://github.com/puikinsh/Adminator-admin-dashboard) admin 
