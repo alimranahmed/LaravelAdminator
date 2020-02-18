@@ -1,9 +1,9 @@
 {
-    "name": "laravel/laravel",
+    "name": "alimranahmed/laravel-adminator",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "A boilerplate of Laravel project using Adminator admin dashboard",
     "keywords": [
-        "framework",
+        "adminator",
         "laravel"
     ],
     "license": "MIT",
