@@ -12,7 +12,7 @@ dashboard
 - [Bootstrap 4.3](https://getbootstrap.com/docs/4.3)
 
 ### Installation
-- Clone this repository
+- Run `composer create-project alimranahmed/laravel-adminator <project-name>`
 - Run `composer install`
 - Run `yarn install`
 - Run `npm run dev`
