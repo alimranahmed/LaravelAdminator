@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicon-->
-    <link rel="shortcut icon" type="image/png" href="{{asset('images/favicon.png')}}"/>
+    <link rel="shortcut icon" type="image/png" href="{{asset('images/logo.png')}}"/>
 
     <title>{{ config('app.name', 'Laravel Adminator') }}</title>
 

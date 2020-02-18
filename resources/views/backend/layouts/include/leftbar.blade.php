@@ -7,8 +7,10 @@
                     <a class="sidebar-link td-n" href="">
                         <div class="peers ai-c fxw-nw">
                             <div class="peer">
-                                <div class="logo">
-                                    <img src="{{asset('images/logo.png')}}" alt="" class="w-100" style="height: 65px">
+                                <div class="logo p-3">
+                                    <img src="{{asset('images/logo.png')}}" alt=""
+                                         class="w-100"
+                                         style="height:59px">
                                 </div>
                             </div>
                             <div class="peer peer-greed">
@@ -30,7 +32,8 @@
         <!-- ### $Sidebar Menu ### -->
         <ul class="sidebar-menu scrollable pos-r">
             <li class="nav-item mT-30 active">
-                <a class="sidebar-link {{ request()->is('/') ? 'highlight' : '' }}" href="#">
+                <a class="sidebar-link {{ request()->is('/') ? 'highlight' : '' }}"
+                   href="{{route('backend.dashboard')}}">
                     <span class="icon-holder">
                         <i class="c-blue-500 ti-home"></i>
                     </span>

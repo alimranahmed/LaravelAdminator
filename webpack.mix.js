@@ -18,7 +18,7 @@ mix.js('resources/js/adminator/index.js', 'public/js/adminator.js')
 
 //Laravel Default
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+   .sass('resources/sass/app.scss', 'public/css');
 
 mix.webpackConfig({
     resolve: {
